@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'khazad';
+  src: url('fonts/KhazadDum3D.ttf') format('truetype');
+}
+
+body, html{
+  margin:0;
+  user-select:none;
+  background-image: url("images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*DIV POSITIONINGS*/
+.windiv{
+  width:100vw; 
+  height:20vh; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.winner{
+  font-family: khazad;
+  font-weight: bold;
+  color: #ff5959;
+
+  
+  text-shadow:
+    -1px -1px 0 #fff,
+    0 -1px 0 #fff,
+    1px -1px 0 #fff,
+    1px 0 0 #fff,
+    1px 1px 0 #fff,
+    0 1px 0 #fff,
+    -1px 1px 0 #fff,
+    -1px 0 0 #fff;
+  
+}
+
+
+
+@media(orientation: landscape){
+   .diceparent{
+      display:flex;
+   }
+   .dicechild1{
+      width:50vw; 
+      height:60vh; 
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .dicechild2{
+      width:50vw; 
+      height:60vh; 
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   
+   #playbtn{
+    width:20%;
+    object-fit: contain;
+  }
+}
+
+@media(orientation: portrait){
+  .winner{
+    font-size:80px;
+  }
+  .diceparent{
+      display:flex;
+      flex-direction: column;
+   }
+   .dicechild1{
+      width:100vw; 
+      height:30vh; 
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .dicechild2{
+      width:100vw; 
+      height:30vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   #img1{
+    height:70%;
+    width:70%;
+    object-fit: contain;
+   }
+   #img2{
+    height:70%;
+    width:70%;
+    object-fit: contain;
+   }
+   .playername{
+    width:40%;
+    object-fit: contain;
+   }
+   #playbtn{
+    width:40%;
+    object-fit: contain;
+   }
+   .btntxt{
+    font-size: 50px;
+   }
+}
+
+.btndiv{
+  width:100vw; 
+  height:20vh; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*DIV POSITIONINGS*/
+
+
+
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(3600deg);
+    }
+  }
+  
+  .roller{
+    animation: rotate 2s linear; /* Adjust animation duration and timing function as needed */
+  }
+  
